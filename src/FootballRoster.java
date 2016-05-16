@@ -8,4 +8,5 @@ public class FootballRoster {
     double height;
     double weight;
     boolean isRookie;
+    int experience;
 }
