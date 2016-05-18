@@ -1,8 +1,8 @@
 /**
  * Created by Erik on 5/16/16.
  */
-public class FootballRoster {
-    static int RosterSize = 53;
+public class Roster {
+    static final int RosterSize = 53;
     String team;
     String playerName;
     String position;
@@ -11,9 +11,9 @@ public class FootballRoster {
     double weight;
     boolean isActive;
     int experience;
-    FootballRoster[] roster = new FootballRoster[RosterSize];
+    Roster[] roster = new Roster[RosterSize];
 
-    public FootballRoster(String team, String playerName, String position, int jerseyNumber) {
+    public Roster(String team, String playerName, String position, int jerseyNumber) {
         this.team = team;
         this.playerName = playerName;
         this.position = position;

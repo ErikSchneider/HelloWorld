@@ -2,11 +2,16 @@
  * Created by Erik on 5/16/16.
  */
 public class Person {
-    static int familySize = 10;
+    static final int familySize = 10; //final will not let you change value of array
     String name;
     int age;
     boolean isAlive;
     Person[] family = new Person[familySize];
+    Email email;
+
+    public Person(){ //empty constructor
+
+    }
 
     public Person(String name, int age, boolean isAlive) {
         this.name = name;
@@ -37,6 +42,7 @@ public class Person {
     public boolean getIsAlive() {
         return isAlive;
     }
+
 
     public void setIsAlive(boolean newIsAlive) {
         isAlive = newIsAlive;
