@@ -41,5 +41,22 @@ public class Exercise01 {
 
         System.out.println(nameMap);
 
+        // alternative solution
+
+        nameMap = new HashMap<>();
+
+        for (String name : names) {
+            char firstLetter = name.charAt(0);
+            String firstLetterStr = String.valueOf(firstLetter);
+            ArrayList<String> arr = nameMap.get(firstLetterStr);
+            if (arr == null) {
+                arr = new ArrayList<>();
+                arr.add(name);
+                nameMap.put(firstLetterStr, arr);
+            } else {
+                arr.add(name);
+            }
+        }
+        System.out.println(nameMap);
     }
 }
