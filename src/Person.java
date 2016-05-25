@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * Created by Erik on 5/16/16.
  */
@@ -25,10 +27,9 @@ public class Person {
     }
 
     public void setName (String newName) {
-        if (isValidName(newName))  {
+        //if (isValidName(newName))  {
             name = newName;
-
-        }
+       // }
     }
 
     public int getAge() {
@@ -54,4 +55,14 @@ public class Person {
 
     }
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", isAlive=" + isAlive +
+                ", family=" + Arrays.toString(family) +
+                ", email=" + email +
+                '}';
+    }
 }
