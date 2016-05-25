@@ -10,7 +10,7 @@ import java.util.Scanner;
 /**
  * Created by Erik on 5/25/16.
  */
-public class ReadWrite {
+public class ReadWriteJSON {
     public static void main(String[] args) throws IOException {
         HashMap person = new HashMap();
         person.put("name", "Alice");
