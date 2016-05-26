@@ -75,4 +75,16 @@ public class Email {
     public void setSent(boolean sent) {
         isSent = sent;
     }
+
+    @Override
+    public String toString() {
+        return "Email{" +
+                "author=" + author +
+                ", subject='" + subject + '\'' +
+                ", body='" + body + '\'' +
+                ", destination='" + destination + '\'' +
+                ", time=" + time +
+                ", isSent=" + isSent +
+                '}';
+    }
 }

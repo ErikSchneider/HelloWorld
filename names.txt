@@ -1,0 +1,10 @@
+Alice,20,Charleston
+Bob,30,New York
+Charlie,40,San Francisco
+
+// Square brackets turn into arraylist, curly brackets turn into hashmaps
+[
+{"name":"Alice", "age":"20","city":"Charleston"}
+{"name":"Bob", "age":"30","city":"New York"}
+{"name":"Charlie", "age":"40","city":"San Francisco"}
+]
