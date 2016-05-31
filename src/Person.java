@@ -1,9 +1,10 @@
 import java.util.Arrays;
+import java.util.Objects;
 
 /**
  * Created by Erik on 5/16/16.
  */
-public class Person {
+public class Person implements Comparable {
     static final int familySize = 10; //final will not let you change value of array
     String name;
     int age;
@@ -64,5 +65,11 @@ public class Person {
                 ", family=" + Arrays.toString(family) +
                 ", email=" + email +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        Person otherPerson = (Person)  o;
+        return this.name.compareTo(otherPerson.name);
     }
 }
