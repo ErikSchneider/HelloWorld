@@ -12,7 +12,7 @@ public class Person implements Comparable {
     Person[] family = new Person[familySize];
     Email email;
 
-    public Person(){ //empty constructor
+    public Person(String column, String s){ //empty constructor
 
     }
 
